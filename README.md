@@ -17,4 +17,4 @@ We used the following files provided by Udacity to work on this project:
 * washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Thanks to Udacity for teaching me Python :sparkles: :heart: :sparkles:
