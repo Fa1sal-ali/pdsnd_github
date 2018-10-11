@@ -20,8 +20,7 @@ def get_city():
     (str) city - name of the city to analyze
     """
 
-    print('\nWould you like to see data for Chicago, New York or Washington:')
-    city=input().lower()
+    city=input('\nWould you like to see data for Chicago, New York or Washington:').lower()
     while city not in CITY_DATA:
         print('\nLooks like the entered city is not present in our data set.')
         print('Please enter a valid input.')
