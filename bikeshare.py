@@ -20,8 +20,7 @@ def get_city():
     (str) city - name of the city to analyze
     """
 
-    print('\nWould you like to see data for Chicago, New York or Washington:')
-    city=input().lower()
+    city=input('\nWould you like to see data for Chicago, New York or Washington:').lower()
     while city not in CITY_DATA:
         print('\nLooks like the entered city is not present in our data set.')
         print('Please enter a valid input.')
@@ -182,16 +181,14 @@ def user_stats(df,city):
     start_time = time.time()
     # Display counts of user types
     print('\nHow many types of user\'s are there and what is their count ?')
-    user_types = df['User Type'].value_counts()
-    print(user_types)
+    print(df['User Type'].value_counts())
     # Display counts of gender
     print('\nWhat is the count of gender ?')
     if city=='washington':
         print('\nThe dataset for Washington city does not contains gender column.')
         print('So this question is not valid for Washington city.')
     else:
-        gender = df['Gender'].value_counts()
-        print(gender)
+        print(df['Gender'].value_counts())
     # Display earliest, most recent, and most common year of birth
     print('\nWhich are the earliest, most recent, and most common year of birth ?')
     if city=='washington':
